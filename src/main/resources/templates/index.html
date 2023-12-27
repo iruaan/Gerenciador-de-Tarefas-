@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>do!</title>
+</head>
+<body>
+    <form action="/tasks/inserir-tarefa" method="post">
+        <!-- Campos do formulário -->
+        <label for="name">Título:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="description">Descrição:</label>
+        <textarea id="description" name="description" required></textarea>
+        
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="true">Concluído</option>
+            <option value="false">Não Concluído</option>
+        </select>
+    
+        <button type="submit">Inserir Tarefa</button>
+    </form>
+    <form action="/tasks" method="get">
+      
+    
+        <button type="submit">Listar Tarefas</button>
+    </form>
+    <form action="/tasks/delete" method="delete">
+        <!-- Campos do formulário -->
+        <label for="id">Id:</label>
+        <input type="int" id="id" name="id" required>
+    
+        <button type="submit">deletar tarefa</button>
+    </form>
+    <form action="/tasks/update" method="put">
+        <!-- Campos do formulário -->
+        <label for="id">Id:</label>
+        <input type="int" id="id" name="id" required>
+        <label for="name">Título:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="description">Descrição:</label>
+        <textarea id="description" name="description" required></textarea>
+        
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="true">Concluído</option>
+            <option value="false">Não Concluído</option>
+        </select>
+    
+        <button type="submit">Editar Tarefa</button>
+    </form>
+
+</body>
+</html>
